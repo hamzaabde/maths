@@ -2,9 +2,7 @@
 function sum(...numbers) {
 
     // if input is array
-    numbers = numbers.flatMap(n => {
-        return 
-    })
+    numbers = numbers.flat(5)
 
     // convert to number
     if(numbers.length === 1) return +`${numbers}`
@@ -19,7 +17,7 @@ function sum(...numbers) {
 function subtrc(...numbers) {
 
     // if input is array
-    numbers = numbers.flat()
+    numbers = numbers.flat(5)
 
     // convert to number
     if(numbers.length === 1) return +`${numbers}`
@@ -34,7 +32,7 @@ function subtrc(...numbers) {
 function mult(...numbers) {
 
     // if input is array
-    numbers = numbers.flat()
+    numbers = numbers.flat(5)
 
     // convert to number
     if(numbers.length === 1) return +`${numbers}`
@@ -49,7 +47,7 @@ function mult(...numbers) {
 function divide(...numbers) {
 
     // if input is array
-    numbers = numbers.flat()
+    numbers = numbers.flat(5)
 
     // convert to number
     if(numbers.length === 1) return +`${numbers}`
@@ -60,4 +58,4 @@ function divide(...numbers) {
     })
 }
 
-console.log(divide([1, [234],3]))
+console.log(sum([1, [234],3]))

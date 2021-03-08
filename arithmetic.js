@@ -58,4 +58,4 @@ function divide(...numbers) {
     })
 }
 
-console.log(sum([1, [234],3]))
+// console.log(sum([1, [234],3]))

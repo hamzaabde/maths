@@ -1,0 +1,6 @@
+implement a function that solves mathematical equation
+implement a function that takes domain and return range
+implement a function that solves a math function
+implement a function that calculates the derivetive of a function
+implement a function that calculates the integral of a function
+implement a definite integral function

@@ -1,5 +1,4 @@
 // lcm
-
 function lcm(...numbers) {
     const max = Math.max(...numbers)
 
@@ -24,7 +23,6 @@ function lcm(...numbers) {
 
 
 // GCF - Greatest Common Factor
-
 function gcf(...numbers) {
     const min = Math.min(...numbers)
 
@@ -45,42 +43,20 @@ function gcf(...numbers) {
     return factor
 }
 
+// return amount from percentage
+function percentOf(percent, total) {
+    let result = +total * +percent / 100
 
-// check numbers by floating points
-
-function isFloat(num) {
-    let upperBound = Math.ceil(num)
-    let lowerBound = Math.floor(num)
-
-    // if the upperbound is greater than the lowerbound => fraction
-    // if both are equal => whole number
-    return upperBound > lowerBound
+    return result
 }
 
-// generate random number 
-// uses the default random method
+// return percentage from amount
+function percent(count, total, returnStr = false) {
+    let result = 100 / +total * +count
 
-function random(range, negative) {
-    // generate random positive integer
-    // if negative is true -range <= random <= range
+    if(!returnStr) return result
 
-    return negative ? Math.floor(Math.random() * range) - Math.floor(Math.random() * range) 
-    : Math.floor(Math.random() * range)
+    return `${result}%`
 }
 
-// tests
-
-// const nu = () => {
-//     let arr = Array(random(12))
-//     return arr.fill(1).map(n => random(100))
-// }
-
-// const test = Array(random(100)).fill(0).map(() => {
-//     let number = nu()
-//     return [number, lcm(...number)]
-// })
-
-
-
-// console.log(gcf(-100, 120))
-// console.log(lcm(-100, 120))
+// console.log(percent(15, 100, true))
